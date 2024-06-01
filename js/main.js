@@ -13,7 +13,17 @@ console.log(personaGuerrero1.toString());
 console.log(personaMago1.toString());
 console.log(personaSacerdote1.toString());
 
-// Realizar ataque
+
+console.log("")
+
+console.log("EL warrior Joel ataca al mago Camilo")
+
 personaGuerrero1.atacar(personaMago1);
 
-console.log(`Vida del mago después del ataque: ${personaMago1.getVida}`);
+console.log("")
+
+console.log("Camilo ha recibido 30 puntos de daño")
+
+console.log("")
+
+console.log(personaMago1.toString());

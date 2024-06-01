@@ -2,7 +2,7 @@ export class character {
     #vida = 20;
     #defensa = 5;
     #daño = 10;
-    
+
     constructor() {
         this.setNombre = undefined;
     }
@@ -36,8 +36,12 @@ export class character {
     }
 
     recibirDaño(cantidad) {
-        const dañoNeto = cantidad
-        this.#vida -= dañoNeto
+        const dañoNeto = cantidad;
+        this.#vida -= dañoNeto;
+    }
+
+    toArray() {
+        return [`Nombre: ${this.nombre}, Vida: ${this.#vida}, Defensa: ${this.#defensa}, Daño: ${this.#daño}`];
     }
 
     toString() {
