@@ -4,9 +4,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script type="module" src="js/main.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="script.js"></script>
     <title>Document</title>
 </head>
 <body>
-    
+    <div class="container">
+        <div class="side">
+            <button class="decision" onclick="handleDecision('opcion1')">Opción 1</button>
+        </div>
+        <div class="center">
+            <p id="message">¡Un monstruo ha aparecido!</p>
+        </div>
+        <div class="side">
+            <button class="decision" onclick="handleDecision('opcion2')">Opción 2</button>
+        </div>
+    </div>
 </body>
 </html>
