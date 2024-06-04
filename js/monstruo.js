@@ -20,3 +20,21 @@ export class monstruo extends criatura {
         console.log(`${this.nombre} ha recibido ${daño} de daño y ahora tiene ${this.vida} de vida`);
     }
 }
+
+export class goblin extends monstruo {
+    constructor() {
+        super("Goblin", 50, 50, 10);
+    }
+}
+
+export class kobold extends monstruo {
+    constructor() {
+        super("Kobold", 30, 30, 5);
+    }
+}
+
+export class orco extends monstruo {
+    constructor() {
+        super("Orco", 80, 80, 15);
+    }
+}

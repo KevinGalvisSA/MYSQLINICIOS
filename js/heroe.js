@@ -22,9 +22,9 @@ export class Heroe extends criatura {
 
     utilizarItem(item) {
         item.utilizar(this);
-        const index = this.inventario.indexOf(item);
-        if (index > -1) {
-            this.inventario.splice(index, 1);
+        const usoItem = this.inventario.indexOf(item);
+        if (usoItem > -1) {
+            this.inventario.splice(usoItem, 1);
         }
     }
 }
