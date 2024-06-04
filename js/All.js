@@ -19,7 +19,7 @@ export class Juego {
 
         const probabilidad = Math.random();
         if (probabilidad < 0.5) {
-            const monstruos = [orco, goblin, kobold];
+            const monstruos = [orco, goblin, esqueleto];
             const indiceAleatorio = Math.floor(Math.random() * monstruos.length);
             this.monstruo = new monstruos[indiceAleatorio]();
             this.loguear(`¡Un ${this.monstruo.nombre} ha aparecido!`);
@@ -99,9 +99,9 @@ export class goblin extends monstruo {
     }
 }
 
-export class kobold extends monstruo {
+export class esqueleto extends monstruo {
     constructor() {
-        super("Kobold", 30, 30, 5);
+        super("esqueleto", 30, 30, 5);
     }
 }
 

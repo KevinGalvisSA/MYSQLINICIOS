@@ -1,6 +1,6 @@
 import { orco } from './orco.js';
 import { goblin } from './goblin.js';
-import { kobold } from './kobold.js';
+import { esqueleto } from './esqueleto.js';
 import { Item } from './item.js';
 import { Heroe } from './heroe.js';
 import { Inventario } from './inventario.js';
@@ -24,7 +24,7 @@ export class Juego {
 
         const probabilidad = Math.random();
         if (probabilidad < 0.5) {
-            const monstruos = [orco, goblin, kobold];
+            const monstruos = [orco, goblin, esqueleto];
             const indiceAleatorio = Math.floor(Math.random() * monstruos.length);
             this.monstruo = new monstruos[indiceAleatorio]();
             this.loguear(`¡Un ${this.monstruo.nombre} ha aparecido!`);

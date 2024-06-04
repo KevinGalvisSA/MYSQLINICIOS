@@ -1,7 +1,10 @@
-import { Heroe } from './heroe.js';
-import { Juego } from './juego.js';
-import { Item } from './item.js';
+## Practica "POO" "Funciones basicas de un videojuego"
 
+Repositorio enfocado en el desarrollo de una actividad de unas funciones de videojuego.
+
+## Codigo de inicio del juego
+
+```javascript
 // Inicio de juego y héroe
 const juego = new Juego();
 const heroe = new Heroe("Pepito Ramirez", 100, 100, 20);
@@ -26,3 +29,9 @@ heroe.utilizarItem(poción);
 
 // Mostrar el estado del héroe después de usar la poción
 console.log(heroe.toString());
+}
+```
+## Realizado por
+
+- [@KevinGalvisSA](https://www.github.com/KevinGalvisSA)
+
