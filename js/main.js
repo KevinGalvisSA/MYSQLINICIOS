@@ -11,6 +11,12 @@ juego.investigar(heroe); // Investigar (puede generar un monstruo o una poción)
 juego.investigar(heroe); 
 juego.investigar(heroe); 
 
+juego.defenderse(heroe); //
+
+// Atacar al monstruo si está presente
+juego.atacar(heroe);
+// Atacar al monstruo si está presente
+juego.atacar(heroe);
 // Atacar al monstruo si está presente
 juego.atacar(heroe);
 

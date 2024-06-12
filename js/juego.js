@@ -42,14 +42,18 @@ export class Juego {
             return;
         }
 
-        heroe.atacar(this.monstruo);
         this.loguear(`${heroe.nombre} ataca a ${this.monstruo.nombre}! Le saca ${heroe.ataque} de vida.`);
+        heroe.atacar(this.monstruo);
 
         if (this.monstruo.vida > 0) {
-            this.monstruo.atacar(heroe);
             this.loguear(`${this.monstruo.nombre} ataca a ${heroe.nombre}! Le saca ${this.monstruo.ataque} de vida.`);
+            this.monstruo.atacar(heroe);
         } else {
             this.loguear(`${this.monstruo.nombre} ha sido derrotado!`);
         }
+    }
+
+    defenderse(heroe) {
+        heroe.defenderse();
     }
 }
